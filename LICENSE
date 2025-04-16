@@ -1,21 +1,51 @@
-MIT License
+JustTech AI Ticari Lisans Sözleşmesi
 
-Copyright (c) 2025 Kadir Ertan ÇAM 
+Bu Ticari Lisans Sözleşmesi ("Sözleşme"), yazılım sistemi olan "JustTech AI" ("Yazılım") için geçerlidir.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Lisans Tanımı
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Bu sözleşme ile, Lisans Sahibi'ne, geçerli bir lisans anahtarı karşılığında Yazılım'ı kullanma hakkı verilmektedir. Bu lisans gayri münhasırdır, devredilemez ve alt lisanslanamaz.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Yetkilendirilen Kullanım
+
+Lisans Sahibi, satın alınan lisans planına bağlı olarak Yazılım'ı kullanabilir. Lisans planlarının detayları şunlardır:
+
+   - Temel (Basic) Plan: Tek kullanıcı, günlük 20 işlem limiti, 512x512 çözünürlük
+   - Profesyonel (Pro) Plan: 3 kullanıcıya kadar, günlük 100 işlem limiti, 1024x1024 çözünürlük
+   - Kurumsal (Enterprise) Plan: Sınırsız kullanıcı, sınırsız işlem, maksimum çözünürlük
+
+3. Lisans Süresi
+
+Lisans, belirtilen süre boyunca geçerlidir. Süre bitiminde, Yazılım'ın kullanımına devam edilebilmesi için lisansın yenilenmesi gerekir.
+
+4. Kısıtlamalar
+
+Lisans Sahibi aşağıdakileri yapamaz:
+   - Yazılım'ı lisansın izin verdiğinden fazla kullanıcıya açamaz
+   - Yazılım'ı ters mühendisliğe tabi tutamaz, kaynak kodunu çıkaramaz veya türev çalışmalar üretemez
+   - Yazılım'ı veya lisans anahtarını üçüncü şahıslara kiralayamaz, satamaz veya transfer edemez
+   - Lisans anahtarı doğrulama sistemini atlatmaya çalışamaz
+
+5. Veri Gizliliği ve Güvenlik
+
+Yazılım, kullanıcı tarafından yüklenen resimler üzerinde çalışır ve bu resimler gizli ve güvenli tutulur. Yazılım sahibi, bu verilere erişemez ve kullanıcının açık rızası olmadan hiçbir şekilde kullanmaz.
+
+6. Fikri Mülkiyet Hakları
+
+Yazılım, tüm unsurları ile birlikte fikri mülkiyet hakları kapsamında korunmaktadır. Lisans Sahibi, Yazılım üzerinde herhangi bir mülkiyet hakkı elde etmez.
+
+7. Sınırlı Garanti ve Sorumluluk Reddi
+
+Yazılım "olduğu gibi" sunulmaktadır ve herhangi bir garanti olmaksızın sağlanmaktadır. Yazılım sahibi, yazılımın kullanımından kaynaklanan doğrudan veya dolaylı hiçbir zarardan sorumlu değildir.
+
+8. Destek ve Bakım
+
+Lisans planlarına bağlı olarak, Lisans Sahibi'ne belirli seviyede teknik destek ve bakım hizmetleri sunulur.
+
+9. Fesih
+
+Bu sözleşme, Lisans Sahibi tarafından ihlal edildiği takdirde, Yazılım sahibi tarafından herhangi bir bildirim yapılmaksızın feshedilebilir.
+
+Bu lisans sözleşmesi, Stable Diffusion 2.0 modelinin kendi lisans şartlarını da kapsar ve onlara tabidir.
+
+© 2023 Tüm Hakları Saklıdır.

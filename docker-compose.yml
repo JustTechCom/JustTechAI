@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # Frontend React Uygulaması
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"  # Nginx ile sunulan React uygulaması
+    depends_on:
+      - backend
+    restart: unless-stopped
+    volumes:
+      - frontend_build:/app/build
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+
+  # Backend FastAPI Uygulaması
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
+      - model_cache:/root/.cache/huggingface
+      - output_data:/app/output
+    environment:
+      - USE_CPU=0  # 0=Otomatik seçim (varsayılan), 1=CPU zorla kullan
+      - DEVELOPMENT_MODE=1  # Geliştirme modu (lisans kontrolü olmadan)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+              # GPU yoksa bu konfigürasyon görmezden gelinir, hata vermez
+
+volumes:
+  frontend_build:
+  model_cache:  # HuggingFace model cache'i için
+  output_data:  # Sonuç görüntüleri saklamak için

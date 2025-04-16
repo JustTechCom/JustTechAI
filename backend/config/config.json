@@ -1,0 +1,26 @@
+{
+    "model_settings": {
+      "model_id": "stabilityai/stable-diffusion-2-inpainting",
+      "cpu_offload": true,
+      "sliced_attention": true,
+      "memory_efficient_attention": true,
+      "attention_slice_size": 4,
+      "sequential_offload": true
+    },
+    "inpainting_settings": {
+      "default_resolution": 512,
+      "max_resolution": 768,
+      "default_inference_steps": 20,
+      "cpu_inference_steps": 20,
+      "default_guidance_scale": 7.5,
+      "tile_size": 256,
+      "tile_overlap": 32
+    },
+    "performance": {
+      "batch_size": 1,
+      "prefetch_factor": 2,
+      "num_workers": 2,
+      "low_memory_mode": true,
+      "cpu_offload_vae": true
+    }
+  }

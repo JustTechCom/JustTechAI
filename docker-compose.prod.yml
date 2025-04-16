@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # Frontend React Uygulaması
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"  # Üretim ortamında 80 portu
+    depends_on:
+      - backend
+    restart: always
+    volumes:
+      - frontend_build:/app/build
+    environment:
+      - REACT_APP_API_URL=https://api.yourdomain.com
+
+  # Backend FastAPI Uygulaması
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    expose:
+      - "8000"
+    restart: always
+    volumes:
+      - model_cache:/root/.cache/huggingface
+      - output_data:/app/output
+    environment:
+      - USE_CPU=0  # 0=Otomatik seçim
+      - DEVELOPMENT_MODE=0  # Üretim modu (lisans kontrolü aktif)
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  
+  # Ters Proxy
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - frontend
+      - backend
+    restart: always
+
+volumes:
+  frontend_build:
+  model_cache:
+  output_data:
