@@ -16,8 +16,8 @@ Bu sistem, Stable Diffusion 2.0 kullanarak gelişmiş inpainting işlemleri yapa
 
 1. Bu repo'yu klonlayın:
 ```bash
-git clone https://github.com/kullaniciadiniz/sd-inpainting-app.git
-cd sd-inpainting-app
+git clone https://github.com/kadirertancam/JustTechAI.git
+cd JustTechAI
 
 Docker Compose ile sistemi başlatın:
 
