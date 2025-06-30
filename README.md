@@ -28,7 +28,7 @@ Tarayıcınızda şu adrese gidin:
 http://localhost:3000
 Lisanslama
 Bu sistem ticari bir üründür ve lisans anahtarı ile çalışır. Lisans almak için iletişime geçin:
-destekadresi@domain.com
+info@justtech.work
 Yeni bir lisans oluşturmak için:
 bashcd scripts
 python generate_license.py --name "Müşteri Adı" --email "musteri@email.com" --plan pro --days 365
@@ -81,7 +81,7 @@ Lisans sürenizin dolup dolmadığını kontrol edin
 
 İletişim ve Destek
 Ticari kullanım ve destek için iletişime geçin:
-destekadresi@domain.com
+info@justtech.work
 
 
 Not: Stable Diffusion 2.0, Stability AI tarafından geliştirilmiştir ve CreativeML Open RAIL-M lisansı altında dağıtılmaktadır.
